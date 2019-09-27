@@ -1,0 +1,25 @@
+body{
+    background-color: lightgray;
+}
+main{
+    width: 50%;
+    margin: auto;
+}
+section h2{
+    margin-top: 6px;
+    text-transform: capitalize;
+}
+.date{
+    text-decoration: underline;
+}
+section{
+background-color:white;
+border: 1px solid black;
+font-family: Arial;
+padding: 8px;
+margin-bottom: 1px;
+}
+small{
+    font-size: 12pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
