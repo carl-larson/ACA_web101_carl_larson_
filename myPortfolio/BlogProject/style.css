@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: aquamarine;
 }
 main{
     width: 50%;
@@ -9,8 +9,12 @@ section h2{
     margin-top: 6px;
     text-transform: capitalize;
 }
+#imp{
+    color: red !important;
+}
 .date{
     text-decoration: underline;
+    color: green;
 }
 section{
 background-color:white;
@@ -22,4 +26,7 @@ margin-bottom: 1px;
 small{
     font-size: 12pt;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+p:hover::first-letter{
+    font-size: 20pt;
 }
