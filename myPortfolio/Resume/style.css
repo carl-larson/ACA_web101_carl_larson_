@@ -1,0 +1,14 @@
+header, div, aside, p, section{
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+header{
+    background-color: wheat;
+}
+body{
+    background-color: gray;
+}
+aside{
+    float: right;
+    background-color: gold;
+}
