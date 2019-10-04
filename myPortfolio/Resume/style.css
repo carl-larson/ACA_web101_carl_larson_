@@ -11,4 +11,7 @@ body{
 aside{
     float: right;
     background-color: gold;
+    margin: 5%, auto;
+    padding: 5%, auto;
+    
 }
