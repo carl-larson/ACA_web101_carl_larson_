@@ -1,17 +1,31 @@
-header, div, aside, p, section{
+header, div, aside, p, section, footer{
     border: 1px solid black;
+    padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 header{
+    /* colors for troubleshooting layout */
     background-color: wheat;
+    width: 100%;
 }
 body{
     background-color: gray;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10% 35% 35% 20%;
 }
 aside{
-    float: right;
+    grid-column: 2/3;
+    grid-row: 2/4;
     background-color: gold;
-    margin: 5%, auto;
-    padding: 5%, auto;
-    
+
+}
+section{
+    grid-column:1/2;
+    align-self: stretch;
+}
+footer{
+    background-color:orange;
+    width: 100%;
+    margin: 10px;
 }
