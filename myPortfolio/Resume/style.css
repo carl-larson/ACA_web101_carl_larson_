@@ -2,30 +2,36 @@ header, div, aside, p, section, footer{
     border: 1px solid black;
     padding: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-header{
-    /* colors for troubleshooting layout */
-    background-color: wheat;
-    width: 100%;
+
 }
 body{
     background-color: gray;
     display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 10% 35% 35% 20%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer"
+}
+header{
+    /* colors for troubleshooting layout */
+    background-color: wheat;
+    grid-area: header;
 }
 aside{
-    grid-column: 2/3;
-    grid-row: 2/4;
     background-color: gold;
-
+    grid-area: aside;
+}
+main{
+    background-color:rosybrown;
+    grid-area: main;
 }
 section{
-    grid-column:1/2;
-    align-self: stretch;
+    background-color:yellow;
 }
 footer{
+    grid-area: footer;
     background-color:orange;
-    width: 100%;
     margin: 10px;
 }
