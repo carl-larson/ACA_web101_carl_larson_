@@ -29,6 +29,8 @@ main{
 }
 section{
     background-color:yellow;
+    margin: 1%;
+    
 }
 footer{
     grid-area: footer;
