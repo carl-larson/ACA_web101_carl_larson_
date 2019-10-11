@@ -5,35 +5,82 @@ body, main, div, aside{
     border: 1px solid black;
 }
 body{
-    background-color: lightskyblue;
+    /* background-color:mediumpurple; */
+    background-image: linear-gradient(to right, darkorchid, mediumorchid, orchid);
     height: calc(100vh - 30px);
 
 }
-
-
 #greeting{
     grid-area: greeting;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#middle{
+    grid-area: time;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 #time{
-    grid-area: time;
+    font-weight: Bold;
+    font-size: 4em;
+    margin: auto;
+
 }
 #date{
     grid-area: date;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+h4{
+    margin-top: 5px;
+}
+h3{
+    margin:auto;
 }
 #calculator{
     grid-area: calculator;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 20% auto 5px;
 }
 #todo{
     grid-area: todo;
 }
-.buttons{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+#ultodo{
+    list-style-type: none;
+}
+li{
+    padding: 4px;
+}
+#screen{
+    background-color: white;
+    height: 70%;
+}
+#button-container{
+    display: flex;
+    width: 252px;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    
+}
+button.small{
+    width: 63px;
+    height: 40px;
+    margin: none;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255, 0.3);
+    text-align: center;
+    border-color: black gray red;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 .container{
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: auto 300px;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas:
     "greeting calculator"
