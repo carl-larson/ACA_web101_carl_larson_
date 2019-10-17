@@ -1,0 +1,198 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* Header CSS */
+#header{
+    text-align: center;
+}
+#navigation{
+    padding: 0;
+}
+#navigation li{
+    display: inline;
+    width: 80px;
+    margin: 10px 10px;
+}
+#navigation li a{
+    display: inline-block;
+}
+.selected a{
+    color: teal;
+}
+#navigation  a:hover{
+    color: teal;
+}
+/* Body CSS */
+#body{
+    
+}
+main>img {
+    margin: 0px 0px 20px 0px;
+    float: left;
+    width: 100vw;
+    min-width: 970px;
+}
+/* Text On Picture */
+main>div{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: left;
+    
+    /* width:min-content; */
+    padding-left:50%;
+}
+main div *{
+    margin: 12px 0px;
+    height: 30px;
+    padding: 10px;
+    /* align-content: space-around; */
+}
+main>div h2{
+    background-color: white;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+main>div span{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+}
+main>div a{
+    color: white;
+    background-color: teal;
+}
+/* Three pictures at bottom */
+#body{
+    /* display: inline-block; */
+}
+#body ul{
+    display: flex;
+
+}
+#body>ul li{
+    
+    /* float: left; */
+    width: 300px;
+    margin: 0px 10px 20px;
+}
+#body ul li a span{
+    text-align: center;
+    /* width: 100%; */
+    display: block;
+    padding: 15px 0 0 0;
+}
+#body ul li a img{
+    border: 2px black solid;
+}
+
+/* #footer{
+    padding: 40px 0;
+    width: 100%;
+    background-color: #252525;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+}
+#footer div{
+    width: 960px;
+    margin: 0 auto;
+    height: 40px;
+    overflow: hidden;
+}
+#footer div p{
+    float: left;
+    line-height: 44px;
+    margin: 0 0 0 10px;
+
+}
+#footer div ul{
+    float: right;
+    width: 256px;
+}
+#footer div ul li{
+    float: left;
+    margin: 0 10px;
+	padding: 0;
+	width: 44px;
+} */
+#footer {
+	background: #252525;
+	margin: 0;
+	padding: 36px 0 42px;
+}
+#footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+	/* width: 960px; */
+}
+#footer div p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+#footer div ul {
+	display: block;
+	float: right;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 256px;
+}
+#footer div ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 44px;
+}
+/* I copied this footer stuff because it was really neat
+to see how it worked with the little icon.jpg map of icons. */
+#footer div ul li a {
+	background: url(../images/icons.jpg) no-repeat 0 0;
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 44px;
+}
+#footer div ul li #twitter {
+	background-position: 0 0;
+}
+#footer div ul li #twitter:hover {
+	background-position: -44px 0;
+}
+#footer div ul li #facebook {
+	background-position: 0 -44px;
+}
+#footer div ul li #facebook:hover {
+	background-position: -44px -44px;
+}
+#footer div ul li #googleplus {
+	background-position: 0 -88px;
+}
+#footer div ul li #googleplus:hover {
+	background-position: -44px -88px;
+}
+#footer div ul li #pinterest {
+	background-position: 0 -132px;
+}
+#footer div ul li #pinterest:hover {
+	background-position: -44px -132px;
+}
