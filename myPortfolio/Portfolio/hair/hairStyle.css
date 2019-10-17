@@ -78,7 +78,7 @@ main>div a{
 }
 #body ul{
     display: flex;
-
+    margin: 0 auto;
 }
 #body>ul li{
     

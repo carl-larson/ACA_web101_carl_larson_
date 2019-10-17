@@ -6,7 +6,7 @@ body, main, div, aside{
 }
 body{
     /* background-color:mediumpurple; */
-    background-image: linear-gradient(to right, darkorchid, mediumorchid, orchid);
+    background-image: linear-gradient(to bottom, darkorchid, mediumorchid, orchid);
     height: calc(100vh - 30px);
 
 }
@@ -24,7 +24,7 @@ body{
 }
 #time{
     font-weight: Bold;
-    font-size: 4em;
+    font-size: 2em;
     margin: auto;
 
 }
@@ -40,6 +40,11 @@ h4{
 h3{
     margin:auto;
 }
+/* #calc-cont{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
 #calculator{
     grid-area: calculator;
     display: grid;
@@ -55,9 +60,13 @@ h3{
 li{
     padding: 4px;
 }
+label > input[checked="checked"] {
+    text-decoration: line-through;
+}
 #screen{
     background-color: white;
     height: 70%;
+    width: 254px;
 }
 #button-container{
     display: flex;
@@ -80,11 +89,55 @@ button.small{
 }
 .container{
     display: grid;
-    grid-template-columns: auto 300px;
-    grid-template-rows: 25% 25% 25% 25%;
+    min-width: 320px;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 60px 40px 200px 340px;
     grid-template-areas:
-    "greeting calculator"
-    "time calculator"
-    "time todo"
-    "date todo"
+    "greeting"
+    "time"
+    "date"
+    "todo"
+    "calculator"
+}
+/* Tablet size */
+@media (min-width: 594px) {
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px auto 340px;
+        grid-template-areas:
+        "greeting greeting"
+        "time date"
+        "calculator todo"
+        
+    }
+
+#time{
+    font-weight: Bold;
+    font-size: 4em;
+    margin: auto;
+}
+}
+
+/* Desktop size */
+@media (min-width: 786px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-template-rows: 100px 240px 25% 25%;
+        grid-template-areas:
+        "greeting calculator"
+        "time calculator"
+        "time todo"
+        "date todo"
+    }
+body{
+    background-image: linear-gradient(to right, darkorchid, mediumorchid, orchid);
+}
+#time{
+    font-weight: Bold;
+    font-size: 4em;
+    margin: auto;
+
+}
 }
