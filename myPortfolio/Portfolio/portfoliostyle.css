@@ -1,0 +1,41 @@
+body{
+    background-color: darkgray;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+div{
+    border: 1px solid black;
+}
+
+/* Desktop display */
+@media (min-width: 590px){
+body{
+    background-color: lightgray;
+
+}
+header{
+
+}
+main{
+        display: grid;
+    grid-template-columns: auto 250px;
+}
+#sitecontainer{
+    grid-column: 1/ 2;
+}
+#formcontainer{
+    grid-column: 2/ 3;
+}
+
+}
