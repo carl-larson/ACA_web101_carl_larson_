@@ -13,7 +13,7 @@ body{
     
 }
 main{
-    background-image: url(moonshot.png);
+    background-image: url(../images/moonshot.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
