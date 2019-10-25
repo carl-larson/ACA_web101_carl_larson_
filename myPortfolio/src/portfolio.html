@@ -14,7 +14,7 @@
     </header>
     <main>
         <div id="sitecontainer">
-            <ul>
+            <ul class="flex-container">
                 <li>
                     <a href="./dashboard.html">
                         Dashboard
@@ -34,13 +34,23 @@
         </div>
         <div id="formcontainer">
             <h3>Reach Out!</h3>
-            <form action="">
-                <input type="email" name="Email">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="button">
-                <input type="button">
+            <form action="" class="grid-container">
+                <p id="name">Name:<br>
+                    <input type="text" name="name"></p>
+                <p id="email">Email:<br>
+                    <input type="email" name="email"></p>
+                <p id="state">Which state are you from?<br>
+                    <select name="state" id="state-menu">
+                        <option value="Texas">Texas</option>
+                        <option value="Other">Other</option>
+                    </select></p>
+                <p id="flavor">Flavor:<br>
+                    <input type="radio" name="yes" value="yes" checked>Yes</input>
+                    <br>
+                    <input type="radio" name="yes" value="extra">Extra</input></p>
+                <p>
+                    <input type="submit" name="Submit" class="button">
+                <input type="reset" name="Reset" class="button"></p>
             </form>
         </div>
     </main>
