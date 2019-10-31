@@ -1,5 +1,16 @@
-/* body {
-    display: grid;
+body {
+    
+}
+/* TABLET SIZE */
+@media (min-width: 768px){
+
+}
+    /* DESKTOP SIZE */
+
+@media (min-width: 1044px) {
+
+}
+    /* display: grid;
     grid-template-rows: 20% 80%;
     grid-template-areas: "header" "main";
     font-family: Arial, Helvetica, sans-serif;
@@ -43,34 +54,7 @@ nav > a {
 
 nav {
     text-align: center;
-} */
+}
 main{
-    width: 50%;
-    margin: auto;
-    margin-top: 124px;
-}
-section h2{
-    margin-top: 6px;
-    text-transform: capitalize;
-}
-#imp{
-    color: red !important;
-}
-.date{
-    text-decoration: underline;
-    color: green;
-}
-section{
-background-color:white;
-border: 1px solid black;
-font-family: Arial;
-padding: 8px;
-margin-bottom: 1px;
-}
-small{
-    font-size: 12pt;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-p:hover::first-letter{
-    font-size: 20pt;
-}
+    grid-area: main;
+} */
