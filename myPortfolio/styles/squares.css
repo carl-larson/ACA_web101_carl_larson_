@@ -1,0 +1,61 @@
+body{
+    background-color: aquamarine;
+}
+#container{
+    width: 50px;
+    margin: auto;
+    background-color: lightgreen;
+}
+.square{
+    margin: 0 0 8px 0;
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+    transition: 3s;
+    /* background-color: rgb(0, 0, 0); */
+}
+.square:nth-child(1){
+    background-color: rgb(0, 30, 0);
+}
+.square:nth-child(2){
+    background-color: rgb(255, 255, 255);
+}
+.square:nth-child(3){
+    background-color: rgb(0, 60, 0);
+}
+.square:nth-child(4){
+    background-color: rgb(220, 255, 220);
+}
+.square:nth-child(5){
+    background-color: rgb(0, 90, 0);
+}
+.square:nth-child(6){
+    background-color: rgb(180, 255, 180);
+}
+.square:nth-child(7){
+    background-color: rgb(0, 120, 0);
+}
+.square:nth-child(8){
+    background-color: rgb(140, 255, 140);
+}
+.square:nth-child(9){
+    background-color: rgb(0, 150, 0);
+}
+.square:nth-child(10){
+    background-color: rgb(100, 255, 100);
+}
+.square:nth-child(11){
+    background-color: rgb(0, 180, 0);
+}
+.square:nth-child(12){
+    background-color: rgb(60, 255, 60);
+}
+
+#container:hover .square:nth-child(odd){
+    /* background-color: white; */
+    transform: translate(100px) scale(2, 2) rotate(360deg);
+}
+#container:hover .square:nth-child(even){
+    /* background-color: black; */
+    transform: translate(-100px) scale(0.5, 0.5) rotate(-360deg);
+}

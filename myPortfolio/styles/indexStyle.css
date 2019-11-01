@@ -1,39 +1,7 @@
 /* MOBILE FIRST */
-/* body {
-    display: grid;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "header" "main";
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: aquamarine;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-  }
- 
-  .logo {
-    width: 80px;
-    height: 80px;
-    margin: 3% 10%;
-  }
- 
-  header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 100px 80% auto;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    background-color: aquamarine;
-  }
-
-.navigate{
-  text-align: center;
+body{
+  
 }
-  .has-border {
-    display:none;
-    
-  }
-  */
 
   main {
     /* margin-top: 100px; */

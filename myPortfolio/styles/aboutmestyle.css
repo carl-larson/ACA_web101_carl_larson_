@@ -1,6 +1,14 @@
 body {
-    
-}
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "header" "main";
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+
 /* TABLET SIZE */
 @media (min-width: 768px){
 
