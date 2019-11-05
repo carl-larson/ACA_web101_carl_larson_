@@ -176,7 +176,7 @@ main>div a{
 /* I copied this footer stuff because it was really neat
 to see how it worked with the little icon.jpg map of icons. */
 #footer div ul li a {
-	background: url(../images/icons.jpg) no-repeat 0 0;
+	background: url(../images/hair/icons.jpg) no-repeat 0 0;
 	display: block;
 	height: 44px;
 	margin: 0;
