@@ -1,6 +1,6 @@
 body{
     font-family: 'Staatliches', cursive;
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
 }
 header{
     display: flex;

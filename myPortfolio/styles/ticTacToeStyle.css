@@ -1,0 +1,28 @@
+body{
+    background-color: aquamarine;
+}
+header{
+    margin-left: 30px;
+
+}
+main{
+    margin: 30px 0 0 30px;
+}
+.board{
+    background-color: gray;
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    width: 366px;
+    height: 366px;
+}
+main .board div{
+    height: 120px;
+    width: 120px;
+}
+.x, .y {
+    border-bottom: 3px black solid;
+}
+
+.A, .B {
+    border-right: 3px black solid;
+}
