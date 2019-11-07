@@ -1,7 +1,8 @@
 body{
     font-family: 'Staatliches', cursive;
-    /* background-color: lightgoldenrodyellow; */
+    background-color: lightgoldenrodyellow;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -18,10 +19,13 @@ header{
     display: block;
 	height: 44px;
 	margin: 1em;
-	/* padding: 0; */
-	text-indent: -99999px;
+	padding: 10px 0 0 0;
+	/* text-indent: -99999px; */
     width: 44px;
-    background-color: orange;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    /* background-color: goldenrod; */
 } 
 ul{
     list-style: none;
@@ -126,6 +130,28 @@ div p {
     text-indent: 2em;
     width: 100%;
     
+}
+/*colors*/
+.blue{
+    background-color: blue;
+}
+.sky-blue{
+    background-color: skyblue;
+}
+#lightblue{
+    background-color: lightblue;
+}
+.goldenrod{
+    background-color: goldenrod;
+}
+.teal{
+    background-color: teal;
+}
+#lightseagreen {
+    background-color: lightseagreen;
+}
+.seagreen {
+    background-color: seagreen;
 }
 @media (min-width: 996px) {
     .header-container{
