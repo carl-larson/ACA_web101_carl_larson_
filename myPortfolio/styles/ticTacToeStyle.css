@@ -16,13 +16,23 @@ main{
     height: 366px;
 }
 main .board div{
-    height: 120px;
-    width: 120px;
-}
-.x, .y {
-    border-bottom: 3px black solid;
+    font-family: sans-serif;
+    height: 80px;
+    width: 70px;
+    padding: 20px 25px;
+    font-size: 80px;
+    color: blue;
 }
 
-.A, .B {
+.board [class*="x"] {
+    border-bottom: 3px black solid;
+}
+.board [class*="y"] {
+    border-bottom: 3px black solid;
+}
+.board [class*="A"] {
+    border-right: 3px black solid;
+}
+.board [class*="B"] {
     border-right: 3px black solid;
 }
