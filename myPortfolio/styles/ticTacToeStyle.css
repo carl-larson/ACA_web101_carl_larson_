@@ -24,15 +24,15 @@ main .board div{
     color: blue;
 }
 
-.board [class*="x"] {
+.board [id*="x"] {
     border-bottom: 3px black solid;
 }
-.board [class*="y"] {
+.board [id*="y"] {
     border-bottom: 3px black solid;
 }
-.board [class*="A"] {
+.board [id*="A"] {
     border-right: 3px black solid;
 }
-.board [class*="B"] {
+.board [id*="B"] {
     border-right: 3px black solid;
 }

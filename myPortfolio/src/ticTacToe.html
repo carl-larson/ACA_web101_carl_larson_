@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/ticTacToeStyle.css">
-    <script type="text/javascript" src="../scripts/ticTacToeScript.js"></script>
+    
     <title>Play Tic Tac Toe!</title>
 </head>
 <body>
     <header>
         <h3>Tic Tac Toe</h3>
-        <button onclick="changeMarkerToX()">X</button>
-        <button onclick="changeMarkerToO()">O</button>
+        <button onclick="changeMarkerToX('turnName')">X</button>
+        <button onclick="changeMarkerToO('turnName')">O</button>
+        <h4>It is <span id="turnName">X</span>'s turn.</h4>
     </header>
     <main>
         <div class="board">
-            <div class="xA" id="xA" onclick="placeMarkxA()"></div>
-            <div class="xB" onclick="placeMarkxB()"></div>
-            <div class="xC" onclick="placeMarkxC()"></div>
-            <div class="yA" onclick="placeMarkyA()"></div>
-            <div class="yB" onclick="placeMarkyB()"></div>
-            <div class="yC" onclick="placeMarkyC()"></div>
-            <div class="zA" onclick="placeMarkzA()"></div>
-            <div class="zB" onclick="placeMarkzB()"></div>
-            <div class="zC" onclick="placeMarkzC()"></div>
+            <div id="xA" onclick="placeMark('xA')"></div>
+            <div id="xB" onclick="placeMark('xB')"></div>
+            <div id="xC" onclick="placeMark('xC')"></div>
+            <div id="yA" onclick="placeMark('yA')"></div>
+            <div id="yB" onclick="placeMark('yB')"></div>
+            <div id="yC" onclick="placeMark('yC')"></div>
+            <div id="zA" onclick="placeMark('zA')"></div>
+            <div id="zB" onclick="placeMark('zB')"></div>
+            <div id="zC" onclick="placeMark('zC')"></div>
         </div>
     </main>
 </body>
+<script type="text/javascript" src="../scripts/ticTacToeScript.js"></script>
 </html>
