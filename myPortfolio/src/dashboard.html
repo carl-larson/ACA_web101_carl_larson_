@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./dashboardstyle.css">
+    <link rel="stylesheet" href="../styles/dashboardstyle.css">
+    
     <title>Dashboard</title>
 </head>
 <body class="container">
@@ -49,25 +50,19 @@
         <!-- </div> -->
         <div id="todo">
             <h4>To Do List</h4>
-            <ul id=ultodo>
-                <li>
-                    <label>
-                        <input type="checkbox" checked="checked"> One
-                    </label>
+            <ul id="ultodo">
+                <li class="item">Test
                 </li>
-                <li>
-                    <label>
-                        <input type="checkbox"> Two
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox"> Three
-                    </label>
-                </li>
-                
             </ul>
+            <!-- <div id="newItemButton"><button href="#">new item</button></div> -->
+            <form id="newItemForm">
+                    <input type="text" id="itemField" placeholder="Item" />
+                    <input type="submit" id="add" value="add" />
+            </form>
         </div>
     
     </body>
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/dashboard.js"></script>
+    
 </html>

@@ -51,23 +51,34 @@ h3{
     grid-template-columns: 100%;
     grid-template-rows: 8% 20% auto 5px;
 }
+
 #todo{
     grid-area: todo;
 }
+
 #ultodo{
     list-style-type: none;
+    width: 200px;
 }
 li{
     padding: 4px;
 }
-label > input[checked="checked"] {
-    text-decoration: line-through;
+.item {
+    background-color: #fff;
+    color: #000;
 }
+#newItemButton{
+    display:none;
+}
+/* label > input[checked="checked"] {
+    text-decoration: line-through;
+} */
 #screen{
     background-color: white;
     height: 70%;
     width: 254px;
 }
+
 #button-container{
     display: flex;
     width: 252px;
