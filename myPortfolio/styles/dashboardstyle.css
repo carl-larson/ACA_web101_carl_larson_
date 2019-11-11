@@ -21,12 +21,22 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 }
 #time{
+    display: block;
     font-weight: Bold;
     font-size: 2em;
     margin: auto;
 
+}
+#coordinate-button{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+#my-coordinates{
+    display: block;
 }
 #date{
     grid-area: date;
@@ -102,7 +112,7 @@ button.small{
     display: grid;
     min-width: 320px;
     grid-template-columns: 100%;
-    grid-template-rows: 40px 60px 40px 200px 340px;
+    grid-template-rows: 40px 160px 40px 200px 340px;
     grid-template-areas:
     "greeting"
     "time"
