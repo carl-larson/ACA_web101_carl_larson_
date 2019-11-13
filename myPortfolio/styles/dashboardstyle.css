@@ -33,10 +33,12 @@ body{
 #coordinate-button{
     display: block;
     width: 100px;
-    margin: 0 auto;
+    margin: auto auto;
 }
 #my-coordinates{
     display: block;
+    height: 20px;
+    margin: 8px auto;
 }
 #date{
     grid-area: date;
@@ -73,13 +75,11 @@ h3{
 li{
     padding: 4px;
 }
-.item {
+#ultodo li{
     background-color: #fff;
     color: #000;
 }
-#newItemButton{
-    display:none;
-}
+
 /* label > input[checked="checked"] {
     text-decoration: line-through;
 } */

@@ -14,12 +14,13 @@
             <h3>"Be adequate."</h3>
         </div>
         <div id="middle">
-            <p id="time">12:00:00</p>
+            <p id="time"></p>
+            <h3 id="showDate"></h3>
             <button id="coordinate-button" onclick="getLocation()">Get Location!</button>
             <p id="my-coordinates"></p>
         </div>
         <div id="date">
-            <h3>Date</h3>
+            
         </div>
         <!-- <div id="calc-cont"> -->
             <div id="calculator">
@@ -51,15 +52,15 @@
         <!-- </div> -->
         <div id="todo">
             <h4>To Do List</h4>
+
+            <form id="newItemForm">
+                    <input type="text" id="itemField" placeholder="Item" maxlength="20"/>
+                    <input type="submit" id="add" value="add" />
+            </form>
             <ul id="ultodo">
                 <li class="item">Test
                 </li>
             </ul>
-            <!-- <div id="newItemButton"><button href="#">new item</button></div> -->
-            <form id="newItemForm">
-                    <input type="text" id="itemField" placeholder="Item" />
-                    <input type="submit" id="add" value="add" />
-            </form>
         </div>
     
     </body>
