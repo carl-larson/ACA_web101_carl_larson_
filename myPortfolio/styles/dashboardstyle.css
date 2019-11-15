@@ -57,12 +57,6 @@ h3{
     justify-content: center;
     align-content: center;
 } */
-#calculator{
-    grid-area: calculator;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 8% 20% auto 5px;
-}
 
 #todo{
     grid-area: todo;
@@ -79,10 +73,16 @@ li{
     background-color: #fff;
     color: #000;
 }
-
-/* label > input[checked="checked"] {
-    text-decoration: line-through;
-} */
+#itemField {
+    
+}
+/* calculator */
+#calculator{
+    grid-area: calculator;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 20% auto 5px;
+}
 #screen{
     background-color: white;
     height: 70%;

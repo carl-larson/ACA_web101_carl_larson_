@@ -21,16 +21,22 @@ body{
 }
 .ring{
     height: 50px;
+    border-radius: 10px;
 }
 #red{
     background-color: red;
+    background-image: linear-gradient(to bottom, red, darkred);
     width: 100%;
 }
 #orange{
     background-color: orange;
+    background-image: linear-gradient(to bottom, orange, rgb(159, 90, 0));
+
     width: 80%;
 }
 #yellow{
     background-color: yellow;
+    background-image: linear-gradient(to bottom, yellow, rgb(139, 139, 0));
+
     width: 60%;
 }
