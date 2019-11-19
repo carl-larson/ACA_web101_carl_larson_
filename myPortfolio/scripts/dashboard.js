@@ -1,3 +1,25 @@
+// Add dice roller
+let die = null;
+let div = document.getElementById("four");
+
+function rollDice(e) {
+    die = Math.floor(Math.random() * e + 1);
+    if (e == 4) {
+        div = document.getElementById("four");
+    } if (e == 6) {
+        div = document.getElementById("six");
+    } if (e == 8) {
+        div = document.getElementById("eight");
+    } if (e == 10) {
+        div = document.getElementById("ten");
+    }if (e == 12) {
+        div = document.getElementById("twelve");
+    } if (e == 20) {
+        div = document.getElementById("twenty");
+    }
+    div.innerHTML = die;
+}
+
 
 // Add toDo List Functionality
 $(function() {
