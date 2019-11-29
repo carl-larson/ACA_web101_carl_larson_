@@ -40,29 +40,31 @@
         <!-- <div id="calc-cont"> -->
             <div id="calculator">
                 <h4>Calculator</h4>
-                <div id="screen"></div>
-                <div id="button-container">
-                    <button class="small" id="C">C</button>
-                    <button class="small" id="+/-">+/-</button>
-                    <button class="small" id="%">%</button>
-                    <button class="small" id="/">/</button>
-                    <button class="small" id="7">7</button>
-                    <button class="small" id="8">8</button>
-                    <button class="small" id="9">9</button>
-                    <button class="small" id="*">*</button>
-                    <button class="small" id="4">4</button>
-                    <button class="small" id="5">5</button>
-                    <button class="small" id="6">6</button>
-                    <button class="small" id="-">-</button>
-                    <button class="small" id="1">1</button>
-                    <button class="small" id="2">2</button>
-                    <button class="small" id="3">3</button>
-                    <button class="small" id="+">+</button>
-                    <button class="small" id="0">0</button>
-                    <button class="small" id=".">.</button>
-                    <button class="small" id="del">del</button>
-                    <button class="small" id="=">=</button>
-                </div>
+                <form name="calfunctions" action="">
+                    <input type="text" class="calculator-screen" value="0" disabled />
+                    <div class="button-container">
+                        <button type="button" class="small clear function" value="clear">C</button>
+                        <button type="button" class="small function" value="-1">+/-</button>
+                        <button type="button" class="small function" value="100">%</button>
+                        <button type="button" class="small operator" value="/">/</button>
+                        <button type="button" class="small" value="7">7</button>
+                        <button type="button" class="small" value="8">8</button>
+                        <button type="button" class="small" value="9">9</button>
+                        <button type="button" class="small operator" value="*">*</button>
+                        <button type="button" class="small" value="4">4</button>
+                        <button type="button" class="small" value="5">5</button>
+                        <button type="button" class="small" value="6">6</button>
+                        <button type="button" class="small operator" value="-">-</button>
+                        <button type="button" class="small" value="1">1</button>
+                        <button type="button" class="small" value="2">2</button>
+                        <button type="button" class="small" value="3">3</button>
+                        <button type="button" class="small operator" value="+">+</button>
+                        <button type="button" class="small" value="0">0</button>
+                        <button type="button" class="small decimal function" value=".">.</button>
+                        <button type="button" class="small function" value="del">del</button>
+                        <button type="button" class="small equal-sign operator" value="=">=</button>
+                    </div>
+                </form>
             </div>
         <!-- </div> -->
         <div id="todo">

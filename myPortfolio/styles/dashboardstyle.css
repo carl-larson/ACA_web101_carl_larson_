@@ -87,7 +87,6 @@ h3{
 #ten {
     background-color: darkred;
     padding: 10px;
-    width:35px;
     clip-path: polygon(50% 0%, 88% 73%, 50% 100%, 12% 73%);
 
 }
@@ -128,15 +127,19 @@ li{
     grid-template-columns: 100%;
     grid-template-rows: 8% 20% auto 5px;
 }
-#screen{
-    background-color: white;
-    height: 70%;
+.calculator-screen{
+    background-color: black;
+    height: 36px;
     width: 254px;
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    margin-left:10px;
 }
 
-#button-container{
+.button-container{
     display: flex;
-    width: 252px;
+    width: 256px;
     /* width: 100%; */
     flex-wrap: wrap;
     
@@ -149,7 +152,7 @@ button.small{
     border-radius: 25px;
     background-color: rgb(255, 255, 255, 0.3);
     text-align: center;
-    border-color: black gray red;
+    border-color: black gray red ;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -189,7 +192,7 @@ button.small{
 @media (min-width: 786px) {
     .container{
         display: grid;
-        grid-template-columns: auto 300px;
+        grid-template-columns: auto 320px;
         grid-template-rows: 100px 240px 25% 25%;
         grid-template-areas:
         "greeting calculator"
